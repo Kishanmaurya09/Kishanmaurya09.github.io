@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Kishan Kumar Maurya | Full-Stack Developer</title>
+  <meta name="description" content="Developer portfolio">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="#top" id="brand"></a>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a class="link" href="#about">About</a></li>
+          <li><a class="link" href="#projects">Projects</a></li>
+          <li><a class="link" href="#skills">Skills</a></li>
+          <li><a class="link" href="#education">Education</a></li>
+          <li><a class="link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="wrap">
+        <div>
+          <h1 id="heroName"></h1>
+          <p class="lede" id="heroTagline"></p>
+          <div class="actions">
+            <a class="btn primary" href="#projects">See my projects</a>
+            <a class="btn" id="resumeBtn" href="#" target="_blank" rel="noopener">Download résumé</a>
+          </div>
+        </div>
+        <div class="code" aria-label="Short profile written as code">
+          <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span>profile.js</span></div>
+          <pre id="typed" aria-hidden="true"></pre>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="block" id="about">
+      <div class="wrap about">
+        <div>
+          <div class="head"><h2>About me</h2></div>
+          <div id="aboutText"></div>
+        </div>
+        <ul class="facts" id="facts"></ul>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="block" id="projects">
+      <div class="wrap">
+        <div class="head">
+          <h2>Projects</h2>
+          <p>Things I've built. Select a project to read more.</p>
+        </div>
+        <div class="projects" id="projectList"></div>
+        <div class="actions"><a class="btn" id="allRepos" href="#" target="_blank" rel="noopener">See all repositories on GitHub</a></div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="block" id="skills">
+      <div class="wrap">
+        <div class="head"><h2>Skills</h2></div>
+        <div class="skills" id="skillList"></div>
+      </div>
+    </section>
+
+    <!-- Education & certificates -->
+    <section class="block" id="education">
+      <div class="wrap">
+        <div class="head"><h2>Education</h2></div>
+        <ol class="timeline" id="timeline"></ol>
+
+        <div class="head extra"><h2>Certificates</h2></div>
+        <ul class="certs" id="certList"></ul>
+        <p class="more-info" id="moreInfo"></p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="block" id="contact">
+      <div class="wrap contact">
+        <div>
+          <div class="head">
+            <h2>Contact</h2>
+            <p>Have a role, a project, or a question? Send a message.</p>
+          </div>
+          <div class="reach" id="reach"></div>
+        </div>
+        <form id="contactForm" novalidate>
+          <label>Your name
+            <input type="text" name="name" autocomplete="name" required>
+          </label>
+          <label>Your email
+            <input type="email" name="email" autocomplete="email" required>
+          </label>
+          <label>Message
+            <textarea name="message" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">Send message</button>
+          <p class="note" id="formNote" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>© <span id="year"></span> <span id="footName"></span></span>
+      <span>Built with HTML, CSS and JavaScript.</span>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
